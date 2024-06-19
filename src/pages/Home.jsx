@@ -1,8 +1,19 @@
 import React from "react";
+import Header from "../components/Header";
+import Button from "../components/Button";
+import DiaryList from "../components/DiaryList";
 
 const Home = () => {
-  
-  return <div>home</div>;
+  return (
+    <div>
+      <Header
+        title={"2024년 6월"}
+        leftChild={<Button text="<" />}
+        rightChild={<Button text=">" />}
+      />
+      <DiaryList />
+    </div>
+  );
 };
 
 export default Home;
